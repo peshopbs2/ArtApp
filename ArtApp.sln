@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtApp.Web", "ArtApp.Web\Ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtApp.Data", "ArtApp.Data\ArtApp.Data.csproj", "{CF808EE8-D058-4B90-856B-AB77AD8AD771}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtApp.Services", "ArtApp.Services\ArtApp.Services.csproj", "{D8EE0FCA-E2AD-4686-A23B-33A1C01DF4CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CF808EE8-D058-4B90-856B-AB77AD8AD771}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF808EE8-D058-4B90-856B-AB77AD8AD771}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF808EE8-D058-4B90-856B-AB77AD8AD771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8EE0FCA-E2AD-4686-A23B-33A1C01DF4CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8EE0FCA-E2AD-4686-A23B-33A1C01DF4CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8EE0FCA-E2AD-4686-A23B-33A1C01DF4CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EE0FCA-E2AD-4686-A23B-33A1C01DF4CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
