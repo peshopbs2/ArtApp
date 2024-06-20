@@ -1,6 +1,10 @@
+using ArtApp.Data.Repositories.Abstractions;
+using ArtApp.Data.Repositories;
 using ArtApp.Web.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using ArtApp.Services.Abstractions;
+using ArtApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +17,12 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddTransient(typeof(ICrudRepository<>), typeof(CrudRepository<>));
+
+builder.Services.AddTransient<IArtistService, ArtistService>();
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 
